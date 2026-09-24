@@ -1,0 +1,205 @@
+<!--- Register Page --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your SaaS & AI Startup account.">
+    <title>Create Account | SaaS & AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body>
+    <!--- Register Section --->
+    <main class="ss-auth-page">
+        <div class="ss-auth-background">
+            <div class="ss-auth-grid"></div>
+            <div class="ss-auth-glow ss-auth-glow-one"></div>
+            <div class="ss-auth-glow ss-auth-glow-two"></div>
+        </div>
+        <div class="ss-auth-layout">
+            <!--- Register Visual --->
+            <div class="ss-auth-visual">
+                <a href="index.html" class="ss-auth-logo">
+                    <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                </a>
+                <div class="ss-auth-visual-content">
+                    <div class="ss-auth-visual-badge">
+                        <span></span>
+                        <i class="bi bi-stars"></i>
+                        AI PLATFORM
+                    </div>
+                    <h1>Build your future with <span>intelligent technology.</span></h1>
+                    <p>Create your account and enter a connected workspace designed to help you build, automate,
+                        analyze, and grow smarter.</p>
+                    <div class="ss-auth-system">
+                        <div class="ss-auth-system-core">
+                            <div class="ss-auth-system-ring"></div>
+                            <div class="ss-auth-system-icon"><i class="bi bi-cpu"></i></div>
+                        </div>
+                        <div class="ss-auth-system-node ss-auth-system-node-one"><i class="bi bi-database"></i></div>
+                        <div class="ss-auth-system-node ss-auth-system-node-two"><i class="bi bi-cloud"></i></div>
+                        <div class="ss-auth-system-node ss-auth-system-node-three"><i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="ss-auth-system-line ss-auth-system-line-one"></div>
+                        <div class="ss-auth-system-line ss-auth-system-line-two"></div>
+                        <div class="ss-auth-system-line ss-auth-system-line-three"></div>
+                        <div class="ss-auth-system-status">
+                            <span></span>
+                            Platform Ready
+                        </div>
+                    </div>
+                    <div class="ss-auth-visual-meta">
+                        <div><strong>AI</strong><span>Powered</span></div>
+                        <div><strong>24/7</strong><span>Connected</span></div>
+                        <div><strong>∞</strong><span>Possibilities</span></div>
+                    </div>
+                </div>
+                <div class="ss-auth-visual-footer">
+                    <span>Secure registration</span>
+                    <i class="bi bi-shield-check"></i>
+                </div>
+            </div>
+            <!--- Register Form --->
+            <div class="ss-auth-form-side">
+                <div class="ss-auth-form-wrap">
+                    <div class="ss-auth-mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                        </a>
+                    </div>
+                    <div class="ss-auth-heading">
+                        <div class="ss-auth-kicker">
+                            <span></span>
+                            Create Account
+                        </div>
+                        <h2>Start your <span>intelligent journey.</span></h2>
+                        <p>Choose your account type and create your account to access your workspace.</p>
+                    </div>
+                    <!--- Role Selector --->
+                    <div class="ss-auth-role">
+                        <button type="button" class="ss-auth-role-btn ss-auth-role-active" data-role="admin">
+                            <span class="ss-auth-role-icon"><i class="bi bi-shield-lock"></i></span>
+                            <span class="ss-auth-role-content">
+                                <strong>Admin</strong>
+                                <small>Manage platform</small>
+                            </span>
+                            <span class="ss-auth-role-check"><i class="bi bi-check-circle-fill"></i></span>
+                        </button>
+                        <button type="button" class="ss-auth-role-btn" data-role="client">
+                            <span class="ss-auth-role-icon"><i class="bi bi-person"></i></span>
+                            <span class="ss-auth-role-content">
+                                <strong>Client</strong>
+                                <small>Access workspace</small>
+                            </span>
+                            <span class="ss-auth-role-check"><i class="bi bi-check-circle-fill"></i></span>
+                        </button>
+                    </div>
+                    <div class="ss-auth-selected">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        <span>Creating <strong id="ss-auth-selected-role">Admin</strong> account</span>
+                    </div>
+                    <!--- Register Form --->
+                    <form id="ss-auth-register-form" class="ss-auth-register-form">
+                        <input type="hidden" id="ss-auth-role" name="role" value="admin">
+                        <!--- Full Name --->
+                        <div class="ss-auth-field">
+                            <label for="ss-auth-name">Full Name</label>
+                            <div class="ss-auth-input-wrap">
+                                <i class="bi bi-person"></i>
+                                <input type="text" id="ss-auth-name" name="name" placeholder="Enter your full name"
+                                    autocomplete="name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ ]+"
+                                    title="Please enter letters and spaces only." required>
+                            </div>
+                        </div>
+                        <!--- Phone Number --->
+                        <div class="ss-auth-field">
+                            <label for="ss-auth-phone">Phone Number</label>
+                            <div class="ss-auth-input-wrap">
+                                <i class="bi bi-telephone"></i>
+                                <input type="tel" id="ss-auth-phone" name="phone"
+                                    placeholder="Enter 10 digit phone number" autocomplete="tel" inputmode="numeric"
+                                    pattern="[0-9]{10}" minlength="10" maxlength="10"
+                                    title="Please enter exactly 10 digits." required>
+                            </div>
+                        </div>
+                        <!--- Email --->
+                        <div class="ss-auth-field">
+                            <label for="ss-auth-email">Email Address</label>
+                            <div class="ss-auth-input-wrap">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" id="ss-auth-email" name="email"
+                                    placeholder="Enter your email address" autocomplete="email" required>
+                            </div>
+                        </div>
+                        <!--- Password --->
+                        <div class="ss-auth-field">
+                            <label for="ss-auth-password">Password</label>
+                            <div class="ss-auth-input-wrap">
+                                <i class="bi bi-lock"></i>
+                                <input type="password" id="ss-auth-password" name="password"
+                                    placeholder="Create a strong password" autocomplete="new-password" minlength="8"
+                                    pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[^A-Za-z0-9]).{8,}"
+                                    title="Password must contain at least 8 characters, one number, one uppercase letter, one lowercase letter, and one special character."
+                                    required>
+                                <button type="button" class="ss-auth-password-toggle" id="ss-auth-password-toggle"
+                                    aria-label="Show password">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                            <div class="ss-auth-password-hint">
+                                <i class="bi bi-info-circle"></i>
+                                <span>8+ characters, uppercase, lowercase, number & special character</span>
+                            </div>
+                        </div>
+                        <!--- Confirm Password --->
+                        <div class="ss-auth-field">
+                            <label for="ss-auth-confirm-password">Confirm Password</label>
+                            <div class="ss-auth-input-wrap">
+                                <i class="bi bi-lock-fill"></i>
+                                <input type="password" id="ss-auth-confirm-password" name="confirm-password"
+                                    placeholder="Confirm your password" autocomplete="new-password" required>
+                                <button type="button" class="ss-auth-password-toggle"
+                                    id="ss-auth-confirm-password-toggle" aria-label="Show password">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--- Create Account Button --->
+                        <button type="submit" class="ss-auth-submit">
+                            <span>Create Account</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </form>
+                    <!--- Sign In --->
+                    <div class="ss-auth-signup">
+                        <span>Already have an account?</span>
+                        <a href="login.html">Sign In <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <!--- Back Home --->
+                    <a href="index.html" class="ss-auth-home">
+                        <i class="bi bi-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <div class="ss-auth-security">
+                        <i class="bi bi-shield-check"></i>
+                        <span>Your account information is securely handled.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--- JavaScript --->
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>

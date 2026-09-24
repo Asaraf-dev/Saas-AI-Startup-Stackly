@@ -1,0 +1,461 @@
+<!--- Client Analytics --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Client Analytics | SaaS & AI Startup">
+    <title>Client Analytics | SaaS & AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/client-analytics.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <div class="ss-dash-page" id="ss-dash-page">
+        <div class="ss-dash-overlay" id="ss-dash-overlay"></div>
+        <!--- Sidebar --->
+        <aside class="ss-dash-sidebar" id="ss-dash-sidebar">
+            <div class="ss-dash-sidebar-top">
+                <a href="index.html" class="ss-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                </a>
+                <button type="button" class="ss-dash-sidebar-close" id="ss-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <!--- Mobile Account --->
+            <div class="ss-dash-mobile-account">
+                <div class="ss-dash-mobile-account-avatar">
+                    <img src="assets/images/profile-2.webp" alt="Profile">
+                </div>
+                <div class="ss-dash-mobile-account-info">
+                    <strong id="ss-dash-mobile-name">User</strong>
+                    <span id="ss-dash-mobile-email">user@example.com</span>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="ss-dash-nav">
+                <div class="ss-dash-nav-label">Workspace</div>
+                <a href="client-dashboard.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-grid-1x2"></i></span>
+                    <span>Overview</span>
+                </a>
+                <a href="client-analytics.html" class="ss-dash-nav-link ss-dash-nav-link-active">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-bar-chart"></i></span>
+                    <span>Analytics</span>
+                </a>
+                <a href="client-ai.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-cpu"></i></span>
+                    <span>My AI</span>
+                </a>
+                <a href="client-profile.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-person-circle"></i></span>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="ss-dash-nav-link ss-dash-nav-logout" id="ss-dash-logout">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-box-arrow-right"></i></span>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <!--- Sidebar Bottom --->
+            <div class="ss-dash-sidebar-bottom">
+                <div class="ss-dash-sidebar-status">
+                    <span></span>
+                    System Online
+                </div>
+            </div>
+        </aside>
+        <!--- Main Area --->
+        <div class="ss-dash-main">
+            <!--- Topbar --->
+            <header class="ss-dash-topbar">
+                <div class="ss-dash-topbar-left">
+                    <button type="button" class="ss-dash-menu" id="ss-dash-menu" aria-label="Open dashboard menu">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                    <div class="ss-dash-title">
+                        <span>Workspace</span>
+                        <h1>Client Analytics</h1>
+                    </div>
+                </div>
+                <div class="ss-dash-topbar-right">
+                    <div class="ss-dash-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="ss-dash-email">user@example.com</span>
+                    </div>
+                    <button type="button" class="ss-dash-profile" id="ss-dash-profile" aria-label="Open profile">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                        <span class="ss-dash-profile-status"></span>
+                    </button>
+                </div>
+            </header>
+            <!--- Analytics Content --->
+            <main class="ss-dash-content">
+                <div class="ss-dash-container">
+                    <!--- Analytics Header --->
+                    <section class="ss-cli-anl-header">
+                        <div class="ss-cli-anl-header-content">
+                            <div class="ss-cli-anl-kicker"><span></span>WORKSPACE INTELLIGENCE</div>
+                            <h2>Understand how your <span>workspace is performing.</span></h2>
+                            <p>Track AI usage, automation activity, project progress, and connected data from your
+                                client workspace.</p>
+                        </div>
+                        <div class="ss-cli-anl-actions">
+                            <button type="button" class="ss-cli-anl-period">
+                                <i class="bi bi-calendar3"></i>
+                                <span id="ss-cli-anl-period-text">Last 30 Days</span>
+                               
+                            </button>
+                            <button type="button" class="ss-cli-anl-export" id="ss-cli-anl-export">
+                                <i class="bi bi-download"></i>
+                                <span>Export</span>
+                            </button>
+                        </div>
+                    </section>
+                    <!--- Analytics Metrics --->
+                    <section class="ss-cli-anl-metrics">
+                        <div class="ss-cli-anl-metric">
+                            <div class="ss-cli-anl-metric-icon ss-cli-anl-purple"><i class="bi bi-stars"></i></div>
+                            <div>
+                                <span>AI Requests</span>
+                                <strong>2.8K</strong>
+                                <small><i class="bi bi-arrow-up"></i> 14.6%</small>
+                            </div>
+                        </div>
+                        <div class="ss-cli-anl-metric">
+                            <div class="ss-cli-anl-metric-icon ss-cli-anl-teal"><i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <div>
+                                <span>Automation Runs</span>
+                                <strong>842</strong>
+                                <small><i class="bi bi-arrow-up"></i> 18.2%</small>
+                            </div>
+                        </div>
+                        <div class="ss-cli-anl-metric">
+                            <div class="ss-cli-anl-metric-icon ss-cli-anl-blue"><i class="bi bi-clock-history"></i>
+                            </div>
+                            <div>
+                                <span>Avg. Response</span>
+                                <strong>1.8s</strong>
+                                <small><i class="bi bi-arrow-down"></i> 9.4%</small>
+                            </div>
+                        </div>
+                        <div class="ss-cli-anl-metric">
+                            <div class="ss-cli-anl-metric-icon ss-cli-anl-orange"><i class="bi bi-check-circle"></i>
+                            </div>
+                            <div>
+                                <span>Success Rate</span>
+                                <strong>99.2%</strong>
+                                <small><i class="bi bi-arrow-up"></i> 1.8%</small>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Main Analytics --->
+                    <section class="ss-cli-anl-main-grid">
+                        <!--- Activity Chart --->
+                        <div class="ss-cli-anl-panel ss-cli-anl-chart-panel">
+                            <div class="ss-cli-anl-panel-head">
+                                <div>
+                                    <span class="ss-cli-anl-section-kicker">ACTIVITY OVERVIEW</span>
+                                    <h3>Workspace activity</h3>
+                                </div>
+                                <div class="ss-cli-anl-legend">
+                                    <span><i></i>AI Requests</span>
+                                    <span><i></i>Automation</span>
+                                </div>
+                            </div>
+                            <div class="ss-cli-anl-chart-wrap">
+                                <div class="ss-cli-anl-y-axis">
+                                    <span>1000</span>
+                                    <span>750</span>
+                                    <span>500</span>
+                                    <span>250</span>
+                                    <span>0</span>
+                                </div>
+                                <div class="ss-cli-anl-chart-area">
+                                    <div class="ss-cli-anl-chart-grid"></div>
+                                    <svg viewBox="0 0 760 280" preserveAspectRatio="none"
+                                        aria-label="Workspace activity chart">
+                                        <defs>
+                                            <linearGradient id="ssCliAnlGradient" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#6C5CE7" stop-opacity=".2" />
+                                                <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path class="ss-cli-anl-chart-fill"
+                                            d="M0,220 C55,205 80,180 125,190 S195,150 240,165 S305,120 350,145 S415,100 460,120 S520,80 565,105 S630,65 675,85 S725,55 760,70 L760,280 L0,280 Z">
+                                        </path>
+                                        <path class="ss-cli-anl-chart-line ss-cli-anl-chart-line-one"
+                                            d="M0,220 C55,205 80,180 125,190 S195,150 240,165 S305,120 350,145 S415,100 460,120 S520,80 565,105 S630,65 675,85 S725,55 760,70">
+                                        </path>
+                                        <path class="ss-cli-anl-chart-line ss-cli-anl-chart-line-two"
+                                            d="M0,240 C55,230 85,215 125,220 S195,195 240,205 S305,170 350,185 S415,155 460,170 S520,135 565,150 S630,125 675,135 S725,110 760,120">
+                                        </path>
+                                    </svg>
+                                    <div class="ss-cli-anl-x-axis">
+                                        <span>1 Sep</span>
+                                        <span>5 Sep</span>
+                                        <span>10 Sep</span>
+                                        <span>15 Sep</span>
+                                        <span>20 Sep</span>
+                                        <span>25 Sep</span>
+                                        <span>30 Sep</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-cli-anl-chart-summary">
+                                <div>
+                                    <span>Peak Activity</span>
+                                    <strong>428</strong>
+                                    <small>Requests / day</small>
+                                </div>
+                                <div>
+                                    <span>Total Activity</span>
+                                    <strong>3.6K</strong>
+                                    <small>This period</small>
+                                </div>
+                                <div>
+                                    <span>Growth</span>
+                                    <strong>+14.6%</strong>
+                                    <small>Compared with previous</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Performance Score --->
+                        <div class="ss-cli-anl-panel ss-cli-anl-performance-panel">
+                            <div class="ss-cli-anl-panel-head">
+                                <div>
+                                    <span class="ss-cli-anl-section-kicker">PERFORMANCE</span>
+                                    <h3>Workspace score</h3>
+                                </div>
+                                <div class="ss-cli-anl-performance-icon"><i class="bi bi-speedometer2"></i></div>
+                            </div>
+                            <div class="ss-cli-anl-score">
+                                <div class="ss-cli-anl-score-ring">
+                                    <strong>94</strong>
+                                    <span>/ 100</span>
+                                </div>
+                                <div class="ss-cli-anl-score-info">
+                                    <strong>Excellent performance</strong>
+                                    <p>Your workspace is operating efficiently across active services.</p>
+                                </div>
+                            </div>
+                            <div class="ss-cli-anl-performance-list">
+                                <div>
+                                    <span><i class="bi bi-stars"></i> AI Processing</span>
+                                    <strong>96%</strong>
+                                </div>
+                                <div>
+                                    <span><i class="bi bi-lightning-charge"></i> Automation</span>
+                                    <strong>94%</strong>
+                                </div>
+                                <div>
+                                    <span><i class="bi bi-database"></i> Data Sync</span>
+                                    <strong>98%</strong>
+                                </div>
+                                <div>
+                                    <span><i class="bi bi-cloud"></i> Cloud Services</span>
+                                    <strong>99%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- AI Analytics --->
+                    <section class="ss-cli-anl-secondary-grid">
+                        <!--- AI Usage --->
+                        <div class="ss-cli-anl-panel">
+                            <div class="ss-cli-anl-panel-head">
+                                <div>
+                                    <span class="ss-cli-anl-section-kicker">AI INTELLIGENCE</span>
+                                    <h3>AI model usage</h3>
+                                </div>
+                                <span class="ss-cli-anl-panel-label">2.8K Requests</span>
+                            </div>
+                            <div class="ss-cli-anl-ai-list">
+                                <div class="ss-cli-anl-ai-item">
+                                    <div class="ss-cli-anl-ai-top">
+                                        <div><span class="ss-cli-anl-ai-icon"><i
+                                                    class="bi bi-stars"></i></span><span>Generative AI</span></div>
+                                        <strong>42%</strong>
+                                    </div>
+                                    <div class="ss-cli-anl-progress"><span style="width:42%"></span></div>
+                                    <div class="ss-cli-anl-ai-meta"><span>1,176 requests</span><span>High usage</span>
+                                    </div>
+                                </div>
+                                <div class="ss-cli-anl-ai-item">
+                                    <div class="ss-cli-anl-ai-top">
+                                        <div><span class="ss-cli-anl-ai-icon"><i
+                                                    class="bi bi-chat-square-text"></i></span><span>AI Assistants</span>
+                                        </div>
+                                        <strong>27%</strong>
+                                    </div>
+                                    <div class="ss-cli-anl-progress"><span style="width:27%"></span></div>
+                                    <div class="ss-cli-anl-ai-meta"><span>756 requests</span><span>Regular</span></div>
+                                </div>
+                                <div class="ss-cli-anl-ai-item">
+                                    <div class="ss-cli-anl-ai-top">
+                                        <div><span class="ss-cli-anl-ai-icon"><i
+                                                    class="bi bi-graph-up-arrow"></i></span><span>Predictive AI</span>
+                                        </div>
+                                        <strong>19%</strong>
+                                    </div>
+                                    <div class="ss-cli-anl-progress"><span style="width:19%"></span></div>
+                                    <div class="ss-cli-anl-ai-meta"><span>532 requests</span><span>Growing</span></div>
+                                </div>
+                                <div class="ss-cli-anl-ai-item">
+                                    <div class="ss-cli-anl-ai-top">
+                                        <div><span class="ss-cli-anl-ai-icon"><i
+                                                    class="bi bi-cpu"></i></span><span>Machine Learning</span></div>
+                                        <strong>12%</strong>
+                                    </div>
+                                    <div class="ss-cli-anl-progress"><span style="width:12%"></span></div>
+                                    <div class="ss-cli-anl-ai-meta"><span>336 requests</span><span>Stable</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Automation Analytics --->
+                        <div class="ss-cli-anl-panel">
+                            <div class="ss-cli-anl-panel-head">
+                                <div>
+                                    <span class="ss-cli-anl-section-kicker">AUTOMATION</span>
+                                    <h3>Workflow performance</h3>
+                                </div>
+                                <span class="ss-cli-anl-panel-label">842 Runs</span>
+                            </div>
+                            <div class="ss-cli-anl-auto-score">
+                                <div class="ss-cli-anl-auto-circle">
+                                    <strong>96%</strong>
+                                    <span>Success</span>
+                                </div>
+                                <div>
+                                    <strong>Automation efficiency</strong>
+                                    <p>Most of your active workflows are completing without intervention.</p>
+                                </div>
+                            </div>
+                            <div class="ss-cli-anl-auto-list">
+                                <div><span>Lead Management</span><strong>98%</strong></div>
+                                <div><span>Data Synchronization</span><strong>96%</strong></div>
+                                <div><span>Document Processing</span><strong>94%</strong></div>
+                                <div><span>Smart Notifications</span><strong>92%</strong></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Project Performance --->
+                    <section class="ss-cli-anl-panel ss-cli-anl-project-panel">
+                        <div class="ss-cli-anl-panel-head">
+                            <div>
+                                <span class="ss-cli-anl-section-kicker">PROJECT PERFORMANCE</span>
+                                <h3>Active project progress</h3>
+                            </div>
+                            <span class="ss-cli-anl-panel-label">3 Active Projects</span>
+                        </div>
+                        <div class="ss-cli-anl-project-table">
+                            <div class="ss-cli-anl-project-row ss-cli-anl-project-heading">
+                                <span>Project</span>
+                                <span>Progress</span>
+                                <span>Activity</span>
+                                <span>Status</span>
+                            </div>
+                            <div class="ss-cli-anl-project-row">
+                                <div class="ss-cli-anl-project-name"><span class="ss-cli-anl-project-icon"><i
+                                            class="bi bi-stars"></i></span><strong>AI Intelligence Platform</strong>
+                                </div>
+                                <div class="ss-cli-anl-project-progress"><span><i
+                                            style="width:82%"></i></span><strong>82%</strong></div>
+                                <div><strong>High</strong></div>
+                                <div><span class="ss-cli-anl-status-active"><i></i>Active</span></div>
+                            </div>
+                            <div class="ss-cli-anl-project-row">
+                                <div class="ss-cli-anl-project-name"><span
+                                        class="ss-cli-anl-project-icon ss-cli-anl-teal-bg"><i
+                                            class="bi bi-lightning-charge"></i></span><strong>Automation
+                                        Workspace</strong></div>
+                                <div class="ss-cli-anl-project-progress"><span><i
+                                            style="width:68%"></i></span><strong>68%</strong></div>
+                                <div><strong>Medium</strong></div>
+                                <div><span class="ss-cli-anl-status-active"><i></i>Active</span></div>
+                            </div>
+                            <div class="ss-cli-anl-project-row">
+                                <div class="ss-cli-anl-project-name"><span
+                                        class="ss-cli-anl-project-icon ss-cli-anl-blue-bg"><i
+                                            class="bi bi-bar-chart-line"></i></span><strong>Data Intelligence</strong>
+                                </div>
+                                <div class="ss-cli-anl-project-progress"><span><i
+                                            style="width:54%"></i></span><strong>54%</strong></div>
+                                <div><strong>Growing</strong></div>
+                                <div><span class="ss-cli-anl-status-active"><i></i>Active</span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Insights + Data Sources --->
+                    <section class="ss-cli-anl-bottom-grid">
+                        <div class="ss-cli-anl-panel">
+                            <div class="ss-cli-anl-panel-head">
+                                <div>
+                                    <span class="ss-cli-anl-section-kicker">DATA INTELLIGENCE</span>
+                                    <h3>Workspace insights</h3>
+                                </div>
+                            </div>
+                            <div class="ss-cli-anl-insights">
+                                <div>
+                                    <span class="ss-cli-anl-insight-icon"><i class="bi bi-arrow-up-right"></i></span>
+                                    <div><strong>AI usage increased</strong>
+                                        <p>AI activity has increased during this reporting period.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="ss-cli-anl-insight-icon ss-cli-anl-teal-bg"><i
+                                            class="bi bi-lightning-charge"></i></span>
+                                    <div><strong>Automation remains active</strong>
+                                        <p>Your workflows continue to process tasks consistently.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="ss-cli-anl-insight-icon ss-cli-anl-blue-bg"><i
+                                            class="bi bi-database"></i></span>
+                                    <div><strong>Data sources are synced</strong>
+                                        <p>Connected data services are currently available.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ss-cli-anl-panel">
+                            <div class="ss-cli-anl-panel-head">
+                                <div>
+                                    <span class="ss-cli-anl-section-kicker">CONNECTED DATA</span>
+                                    <h3>Data source activity</h3>
+                                </div>
+                                <span class="ss-cli-anl-panel-label">08 Sources</span>
+                            </div>
+                            <div class="ss-cli-anl-source-list">
+                                <div><span><i class="bi bi-database"></i> Business
+                                        Database</span><strong>Active</strong></div>
+                                <div><span><i class="bi bi-cloud"></i> Cloud Storage</span><strong>Active</strong></div>
+                                <div><span><i class="bi bi-bar-chart"></i> Analytics Data</span><strong>Active</strong>
+                                </div>
+                                <div><span><i class="bi bi-plug"></i> API Integrations</span><strong>Active</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--- JavaScript --->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-analytics.js"></script>
+</body>
+
+</html>

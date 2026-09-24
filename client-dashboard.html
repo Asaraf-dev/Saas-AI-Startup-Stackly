@@ -1,0 +1,387 @@
+<!--- Client Dashboard --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Client Dashboard | SaaS & AI Startup">
+    <title>Client Dashboard | SaaS & AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/client-dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <div class="ss-dash-page" id="ss-dash-page">
+        <div class="ss-dash-overlay" id="ss-dash-overlay"></div>
+        <!--- Sidebar --->
+        <aside class="ss-dash-sidebar" id="ss-dash-sidebar">
+            <div class="ss-dash-sidebar-top">
+                <a href="index.html" class="ss-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                </a>
+                <button type="button" class="ss-dash-sidebar-close" id="ss-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <!--- Mobile Account --->
+            <div class="ss-dash-mobile-account">
+                <div class="ss-dash-mobile-account-avatar">
+                    <img src="assets/images/profile-2.webp" alt="Profile">
+                </div>
+                <div class="ss-dash-mobile-account-info">
+                    <strong id="ss-dash-mobile-name">User</strong>
+                    <span id="ss-dash-mobile-email">user@example.com</span>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="ss-dash-nav">
+                <div class="ss-dash-nav-label">Workspace</div>
+                <a href="client-dashboard.html" class="ss-dash-nav-link ss-dash-nav-link-active">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-grid-1x2"></i></span>
+                    <span>Overview</span>
+                </a>
+                <a href="client-analytics.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-bar-chart"></i></span>
+                    <span>Analytics</span>
+                </a>
+                <a href="client-ai.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-cpu"></i></span>
+                    <span>My AI</span>
+                </a>
+                <a href="client-profile.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-person-circle"></i></span>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="ss-dash-nav-link ss-dash-nav-logout" id="ss-dash-logout">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-box-arrow-right"></i></span>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <!--- Sidebar Bottom --->
+            <div class="ss-dash-sidebar-bottom">
+                <div class="ss-dash-sidebar-status">
+                    <span></span>
+                    System Online
+                </div>
+            </div>
+        </aside>
+        <!--- Main Area --->
+        <div class="ss-dash-main">
+            <!--- Topbar --->
+            <header class="ss-dash-topbar">
+                <div class="ss-dash-topbar-left">
+                    <button type="button" class="ss-dash-menu" id="ss-dash-menu" aria-label="Open dashboard menu">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                    <div class="ss-dash-title">
+                        <span>Workspace</span>
+                        <h1>Client Dashboard</h1>
+                    </div>
+                </div>
+                <div class="ss-dash-topbar-right">
+                    <div class="ss-dash-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="ss-dash-email">user@example.com</span>
+                    </div>
+                    <button type="button" class="ss-dash-profile" id="ss-dash-profile" aria-label="Open profile">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                        <span class="ss-dash-profile-status"></span>
+                    </button>
+                </div>
+            </header>
+            <!--- Dashboard Content --->
+            <main class="ss-dash-content">
+                <div class="ss-dash-container">
+                    <!--- Client Welcome --->
+                    <section class="ss-cli-welcome">
+                        <div class="ss-cli-welcome-content">
+                            <div class="ss-cli-welcome-kicker"><span></span>CLIENT WORKSPACE</div>
+                            <h2>Welcome back, <span id="ss-cli-welcome-name">User</span>.</h2>
+                            <p>Here's what's happening across your AI-powered workspace today.</p>
+                        </div>
+                        <div class="ss-cli-welcome-date">
+                            <i class="bi bi-calendar3"></i>
+                            <span id="ss-cli-date">24 Sep 2026</span>
+                        </div>
+                    </section>
+                    <!--- Client Metrics --->
+                    <section class="ss-cli-metrics">
+                        <div class="ss-cli-metric">
+                            <div class="ss-cli-metric-icon ss-cli-purple"><i class="bi bi-kanban"></i></div>
+                            <div class="ss-cli-metric-content">
+                                <span>Active Projects</span>
+                                <strong>06</strong>
+                                <small><i class="bi bi-arrow-up"></i> 2 this month</small>
+                            </div>
+                        </div>
+                        <div class="ss-cli-metric">
+                            <div class="ss-cli-metric-icon ss-cli-teal"><i class="bi bi-stars"></i></div>
+                            <div class="ss-cli-metric-content">
+                                <span>AI Requests</span>
+                                <strong>2.8K</strong>
+                                <small><i class="bi bi-arrow-up"></i> 14.6% this month</small>
+                            </div>
+                        </div>
+                        <div class="ss-cli-metric">
+                            <div class="ss-cli-metric-icon ss-cli-blue"><i class="bi bi-lightning-charge"></i></div>
+                            <div class="ss-cli-metric-content">
+                                <span>Automations</span>
+                                <strong>18</strong>
+                                <small><i class="bi bi-check2"></i> All running</small>
+                            </div>
+                        </div>
+                        <div class="ss-cli-metric">
+                            <div class="ss-cli-metric-icon ss-cli-orange"><i class="bi bi-database"></i></div>
+                            <div class="ss-cli-metric-content">
+                                <span>Data Sources</span>
+                                <strong>08</strong>
+                                <small><i class="bi bi-check2"></i> Synced</small>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Main Dashboard Grid --->
+                    <section class="ss-cli-main-grid">
+                        <!--- AI Workspace --->
+                        <div class="ss-cli-panel ss-cli-ai-panel">
+                            <div class="ss-cli-panel-head">
+                                <div>
+                                    <span class="ss-cli-kicker">AI WORKSPACE</span>
+                                    <h3>Your AI activity</h3>
+                                </div>
+                                <a href="client-ai.html" class="ss-cli-view-link">Open My AI <i
+                                        class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="ss-cli-ai-main">
+                                <div class="ss-cli-ai-orb">
+                                    <div class="ss-cli-ai-ring ss-cli-ai-ring-one"></div>
+                                    <div class="ss-cli-ai-ring ss-cli-ai-ring-two"></div>
+                                    <div class="ss-cli-ai-core">
+                                        <i class="bi bi-stars"></i>
+                                        <span>AI</span>
+                                    </div>
+                                </div>
+                                <div class="ss-cli-ai-info">
+                                    <span>AI Usage</span>
+                                    <strong>74%</strong>
+                                    <div class="ss-cli-progress"><span style="width:74%"></span></div>
+                                    <p>Your AI workspace is operating normally with available capacity.</p>
+                                </div>
+                            </div>
+                            <div class="ss-cli-ai-stats">
+                                <div><span>Requests</span><strong>2.8K</strong></div>
+                                <div><span>Successful</span><strong>99.2%</strong></div>
+                                <div><span>Avg. Response</span><strong>1.8s</strong></div>
+                            </div>
+                        </div>
+                        <!--- Workspace Health --->
+                        <div class="ss-cli-panel ss-cli-health-panel">
+                            <div class="ss-cli-panel-head">
+                                <div>
+                                    <span class="ss-cli-kicker">WORKSPACE HEALTH</span>
+                                    <h3>Everything is running.</h3>
+                                </div>
+                                <div class="ss-cli-health-icon"><i class="bi bi-shield-check"></i></div>
+                            </div>
+                            <div class="ss-cli-health-score">
+                                <div class="ss-cli-health-ring">
+                                    <strong>98.6%</strong>
+                                    <span>Healthy</span>
+                                </div>
+                                <div>
+                                    <strong>Systems operational</strong>
+                                    <p>Your connected services and AI systems are working normally.</p>
+                                </div>
+                            </div>
+                            <div class="ss-cli-health-list">
+                                <div><span><i class="bi bi-cpu"></i> AI Services</span><strong>Online</strong></div>
+                                <div><span><i class="bi bi-lightning-charge"></i>
+                                        Automation</span><strong>Online</strong></div>
+                                <div><span><i class="bi bi-database"></i> Data Sync</span><strong>Online</strong></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Projects --->
+                    <section class="ss-cli-section">
+                        <div class="ss-cli-section-head">
+                            <div>
+                                <span class="ss-cli-kicker">YOUR WORKSPACE</span>
+                                <h3>Active projects</h3>
+                            </div>
+                            <a href="client-analytics.html" class="ss-cli-view-link">View analytics <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="ss-cli-project-grid">
+                            <article class="ss-cli-project-card">
+                                <div class="ss-cli-project-top">
+                                    <div class="ss-cli-project-icon"><i class="bi bi-stars"></i></div>
+                                    <span class="ss-cli-project-status"><i></i>Active</span>
+                                </div>
+                                <span class="ss-cli-project-number">01</span>
+                                <h4>AI Intelligence Platform</h4>
+                                <p>Intelligent business system with AI-powered decision support.</p>
+                                <div class="ss-cli-project-progress">
+                                    <div><span>Progress</span><strong>82%</strong></div>
+                                    <div class="ss-cli-progress"><span style="width:82%"></span></div>
+                                </div>
+                                <div class="ss-cli-project-footer">
+                                    <span>Updated today</span>
+                                    <button type="button" class="ss-cli-project-btn"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                            <article class="ss-cli-project-card">
+                                <div class="ss-cli-project-top">
+                                    <div class="ss-cli-project-icon ss-cli-project-teal"><i
+                                            class="bi bi-lightning-charge"></i></div>
+                                    <span class="ss-cli-project-status"><i></i>Active</span>
+                                </div>
+                                <span class="ss-cli-project-number">02</span>
+                                <h4>Automation Workspace</h4>
+                                <p>Connected workflows designed to reduce repetitive business tasks.</p>
+                                <div class="ss-cli-project-progress">
+                                    <div><span>Progress</span><strong>68%</strong></div>
+                                    <div class="ss-cli-progress"><span style="width:68%"></span></div>
+                                </div>
+                                <div class="ss-cli-project-footer">
+                                    <span>Updated yesterday</span>
+                                    <button type="button" class="ss-cli-project-btn"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                            <article class="ss-cli-project-card">
+                                <div class="ss-cli-project-top">
+                                    <div class="ss-cli-project-icon ss-cli-project-blue"><i
+                                            class="bi bi-bar-chart-line"></i></div>
+                                    <span class="ss-cli-project-status"><i></i>Active</span>
+                                </div>
+                                <span class="ss-cli-project-number">03</span>
+                                <h4>Data Intelligence</h4>
+                                <p>Business analytics system connecting data sources and insights.</p>
+                                <div class="ss-cli-project-progress">
+                                    <div><span>Progress</span><strong>54%</strong></div>
+                                    <div class="ss-cli-progress"><span style="width:54%"></span></div>
+                                </div>
+                                <div class="ss-cli-project-footer">
+                                    <span>Updated 2 days ago</span>
+                                    <button type="button" class="ss-cli-project-btn"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!--- Usage + Activity --->
+                    <section class="ss-cli-bottom-grid">
+                        <!--- Solution Usage --->
+                        <div class="ss-cli-panel">
+                            <div class="ss-cli-panel-head">
+                                <div>
+                                    <span class="ss-cli-kicker">SOLUTION USAGE</span>
+                                    <h3>How you use the platform</h3>
+                                </div>
+                            </div>
+                            <div class="ss-cli-usage-list">
+                                <div class="ss-cli-usage-item">
+                                    <div><span><i class="bi bi-stars"></i> AI & Machine
+                                            Learning</span><strong>78%</strong></div>
+                                    <div class="ss-cli-progress"><span style="width:78%"></span></div>
+                                </div>
+                                <div class="ss-cli-usage-item">
+                                    <div><span><i class="bi bi-lightning-charge"></i> Intelligent
+                                            Automation</span><strong>64%</strong></div>
+                                    <div class="ss-cli-progress"><span style="width:64%"></span></div>
+                                </div>
+                                <div class="ss-cli-usage-item">
+                                    <div><span><i class="bi bi-bar-chart"></i> Data
+                                            Intelligence</span><strong>52%</strong></div>
+                                    <div class="ss-cli-progress"><span style="width:52%"></span></div>
+                                </div>
+                                <div class="ss-cli-usage-item">
+                                    <div><span><i class="bi bi-cloud"></i> AI Cloud Platform</span><strong>43%</strong>
+                                    </div>
+                                    <div class="ss-cli-progress"><span style="width:43%"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Recent Activity --->
+                        <div class="ss-cli-panel">
+                            <div class="ss-cli-panel-head">
+                                <div>
+                                    <span class="ss-cli-kicker">RECENT ACTIVITY</span>
+                                    <h3>Latest updates</h3>
+                                </div>
+                            </div>
+                            <div class="ss-cli-activity-list">
+                                <div class="ss-cli-activity">
+                                    <div class="ss-cli-activity-icon"><i class="bi bi-stars"></i></div>
+                                    <div><strong>AI model processed new data</strong><span>12 minutes ago</span></div>
+                                </div>
+                                <div class="ss-cli-activity">
+                                    <div class="ss-cli-activity-icon ss-cli-teal-bg"><i
+                                            class="bi bi-lightning-charge"></i></div>
+                                    <div><strong>Automation workflow completed</strong><span>38 minutes ago</span></div>
+                                </div>
+                                <div class="ss-cli-activity">
+                                    <div class="ss-cli-activity-icon ss-cli-blue-bg"><i class="bi bi-database"></i>
+                                    </div>
+                                    <div><strong>Data source synchronized</strong><span>1 hour ago</span></div>
+                                </div>
+                                <div class="ss-cli-activity">
+                                    <div class="ss-cli-activity-icon ss-cli-orange-bg"><i class="bi bi-bar-chart"></i>
+                                    </div>
+                                    <div><strong>Analytics report generated</strong><span>3 hours ago</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Quick Actions --->
+                    <section class="ss-cli-panel ss-cli-actions-panel">
+                        <div class="ss-cli-panel-head">
+                            <div>
+                                <span class="ss-cli-kicker">QUICK ACTIONS</span>
+                                <h3>What would you like to do?</h3>
+                            </div>
+                        </div>
+                        <div class="ss-cli-actions">
+                            <a href="client-ai.html" class="ss-cli-action">
+                                <span><i class="bi bi-stars"></i></span>
+                                <strong>Open My AI</strong>
+                                <small>Use your AI workspace</small>
+                            </a>
+                            <a href="client-analytics.html" class="ss-cli-action">
+                                <span><i class="bi bi-bar-chart"></i></span>
+                                <strong>View Analytics</strong>
+                                <small>Explore your data</small>
+                            </a>
+                            <a href="404.html" class="ss-cli-action ss-cli-action-disabled">
+                                <span><i class="bi bi-plus-circle"></i></span>
+                                <strong>New Project</strong>
+                                <small>Create a project</small>
+                            </a>
+                            <a href="client-profile.html" class="ss-cli-action">
+                                <span><i class="bi bi-person-circle"></i></span>
+                                <strong>My Profile</strong>
+                                <small>Manage your account</small>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--- JavaScript --->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-dashboard.js"></script>
+</body>
+
+</html>

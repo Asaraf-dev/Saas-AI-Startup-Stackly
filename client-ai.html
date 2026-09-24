@@ -1,0 +1,345 @@
+<!--- Client My AI --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My AI | Client Dashboard | SaaS & AI Startup">
+    <title>My AI | SaaS & AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/client-ai.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <div class="ss-dash-page" id="ss-dash-page">
+        <div class="ss-dash-overlay" id="ss-dash-overlay"></div>
+        <!--- Sidebar --->
+        <aside class="ss-dash-sidebar" id="ss-dash-sidebar">
+            <div class="ss-dash-sidebar-top">
+                <a href="index.html" class="ss-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                </a>
+                <button type="button" class="ss-dash-sidebar-close" id="ss-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <!--- Mobile Account --->
+            <div class="ss-dash-mobile-account">
+                <div class="ss-dash-mobile-account-avatar">
+                    <img src="assets/images/profile-2.webp" alt="Profile">
+                </div>
+                <div class="ss-dash-mobile-account-info">
+                    <strong id="ss-dash-mobile-name">User</strong>
+                    <span id="ss-dash-mobile-email">user@example.com</span>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="ss-dash-nav">
+                <div class="ss-dash-nav-label">Workspace</div>
+                <a href="client-dashboard.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-grid-1x2"></i></span>
+                    <span>Overview</span>
+                </a>
+                <a href="client-analytics.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-bar-chart"></i></span>
+                    <span>Analytics</span>
+                </a>
+                <a href="client-ai.html" class="ss-dash-nav-link ss-dash-nav-link-active">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-cpu"></i></span>
+                    <span>My AI</span>
+                </a>
+                <a href="client-profile.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-person-circle"></i></span>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="ss-dash-nav-link ss-dash-nav-logout" id="ss-dash-logout">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-box-arrow-right"></i></span>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <!--- Sidebar Bottom --->
+            <div class="ss-dash-sidebar-bottom">
+                <div class="ss-dash-sidebar-status">
+                    <span></span>
+                    System Online
+                </div>
+            </div>
+        </aside>
+        <!--- Main Area --->
+        <div class="ss-dash-main">
+            <!--- Topbar --->
+            <header class="ss-dash-topbar">
+                <div class="ss-dash-topbar-left">
+                    <button type="button" class="ss-dash-menu" id="ss-dash-menu" aria-label="Open dashboard menu">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                    <div class="ss-dash-title">
+                        <span>Workspace</span>
+                        <h1>My AI</h1>
+                    </div>
+                </div>
+                <div class="ss-dash-topbar-right">
+                    <div class="ss-dash-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="ss-dash-email">user@example.com</span>
+                    </div>
+                    <button type="button" class="ss-dash-profile" id="ss-dash-profile" aria-label="Open profile">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                        <span class="ss-dash-profile-status"></span>
+                    </button>
+                </div>
+            </header>
+            <!--- AI Content --->
+            <main class="ss-dash-content">
+                <div class="ss-dash-container">
+                    <!--- AI Header --->
+                    <section class="ss-cli-ai-header">
+                        <div class="ss-cli-ai-header-content">
+                            <div class="ss-cli-ai-kicker"><span></span>INTELLIGENT WORKSPACE</div>
+                            <h2>Your AI <span>copilot.</span></h2>
+                            <p>Ask questions, analyze information, create ideas, and work with your business data
+                                through one intelligent workspace.</p>
+                        </div>
+                        <div class="ss-cli-ai-header-status">
+                            <span></span>
+                            AI Online
+                        </div>
+                    </section>
+                    <!--- AI Workspace --->
+                    <section class="ss-cli-ai-workspace">
+                        <!--- Conversation Sidebar --->
+                        <aside class="ss-cli-ai-conversations">
+                            <div class="ss-cli-ai-conversations-head">
+                                <div>
+                                    <span>CONVERSATIONS</span>
+                                    <h3>Recent chats</h3>
+                                </div>
+                               
+                            </div>
+                            <div class="ss-cli-ai-search">
+                                <i class="bi bi-search"></i>
+                                <input type="search" id="ss-cli-ai-search" placeholder="Search conversations"
+                                    aria-label="Search conversations">
+                            </div>
+                            <div class="ss-cli-ai-conversation-list" id="ss-cli-ai-conversation-list">
+                                <button type="button" class="ss-cli-ai-conversation ss-cli-ai-conversation-active">
+                                    <span class="ss-cli-ai-conversation-icon"><i class="bi bi-stars"></i></span>
+                                    <div>
+                                        <strong>Business strategy ideas</strong>
+                                        <small>Today · 10:42 AM</small>
+                                    </div>
+                                   
+                                </button>
+                                <!--<button type="button" class="ss-cli-ai-conversation">
+                                    <span class="ss-cli-ai-conversation-icon"><i class="bi bi-bar-chart"></i></span>
+                                    <div>
+                                        <strong>Analyze sales data</strong>
+                                        <small>Yesterday · 4:18 PM</small>
+                                    </div>
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                                <button type="button" class="ss-cli-ai-conversation">
+                                    <span class="ss-cli-ai-conversation-icon"><i
+                                            class="bi bi-lightning-charge"></i></span>
+                                    <div>
+                                        <strong>Automation workflow</strong>
+                                        <small>22 Sep · 11:06 AM</small>
+                                    </div>
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                                <button type="button" class="ss-cli-ai-conversation">
+                                    <span class="ss-cli-ai-conversation-icon"><i class="bi bi-file-text"></i></span>
+                                    <div>
+                                        <strong>Project documentation</strong>
+                                        <small>20 Sep · 2:30 PM</small>
+                                    </div>
+                                    <i class="bi bi-three-dots"></i>
+                                </button>-->
+                            </div>
+                            <div class="ss-cli-ai-conversation-bottom">
+                                <div class="ss-cli-ai-mini-usage">
+                                    <div>
+                                        <span>AI Usage</span>
+                                        <strong>74%</strong>
+                                    </div>
+                                    <div class="ss-cli-ai-mini-progress"><span style="width:74%"></span></div>
+                                    <small>2.8K requests this month</small>
+                                </div>
+                            </div>
+                        </aside>
+                        <!--- Chat Area --->
+                        <div class="ss-cli-ai-chat">
+                            <!--- Chat Header --->
+                            <div class="ss-cli-ai-chat-head">
+                                <div class="ss-cli-ai-model">
+                                    <div class="ss-cli-ai-model-icon"><i class="bi bi-stars"></i></div>
+                                    <div>
+                                        <strong>Intelligence Engine</strong>
+                                        <span><i></i> Ready to assist</span>
+                                    </div>
+                                </div>
+                                <div class="ss-cli-ai-chat-actions">
+                                    <button type="button" id="ss-cli-ai-clear" aria-label="Clear conversation"
+                                        title="Clear conversation">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                    <a href="404.html"><button type="button" id="ss-cli-ai-chat-settings" aria-label="AI settings"
+                                        title="AI settings">
+                                        <i class="bi bi-sliders"></i>
+                                    </button></a>
+                                </div>
+                            </div>
+                            <!--- Messages --->
+                            <div class="ss-cli-ai-messages" id="ss-cli-ai-messages">
+                                <div class="ss-cli-ai-welcome-message">
+                                    <div class="ss-cli-ai-welcome-orb">
+                                        <div></div>
+                                        <i class="bi bi-stars"></i>
+                                    </div>
+                                    <h3>How can I help you today?</h3>
+                                    <p>Ask me about your business, projects, data, automation, or anything you want to
+                                        explore.</p>
+                                    <div class="ss-cli-ai-suggestions">
+                                        <button type="button"
+                                            data-prompt="Analyze my current project performance and suggest improvements."><i
+                                                class="bi bi-graph-up-arrow"></i><span>Analyze my
+                                                project</span></button>
+                                        <button type="button"
+                                            data-prompt="Give me three ideas to improve my business workflow."><i
+                                                class="bi bi-lightbulb"></i><span>Improve my workflow</span></button>
+                                        <button type="button"
+                                            data-prompt="Help me understand my AI usage this month."><i
+                                                class="bi bi-bar-chart"></i><span>Understand my AI usage</span></button>
+                                        <button type="button"
+                                            data-prompt="Create a practical automation idea for my business."><i
+                                                class="bi bi-lightning-charge"></i><span>Create an
+                                                automation</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--- Chat Input --->
+                            <div class="ss-cli-ai-input-area">
+                                <div class="ss-cli-ai-attachments">
+                                    <button type="button" id="ss-cli-ai-attach" aria-label="Attach file"
+                                        title="Attach file">
+                                        <i class="bi bi-paperclip"></i>
+                                    </button>
+                                    <input type="file" id="ss-cli-ai-file" hidden>
+                                </div>
+                                <textarea id="ss-cli-ai-input" rows="1" placeholder="Ask your AI anything..."
+                                    aria-label="Ask your AI"></textarea>
+                                <div class="ss-cli-ai-input-actions">
+                                    <button type="button" id="ss-cli-ai-mic" aria-label="Voice input"
+                                        title="Voice input">
+                                        <i class="bi bi-mic"></i>
+                                    </button>
+                                    <button type="button" class="ss-cli-ai-send" id="ss-cli-ai-send"
+                                        aria-label="Send message">
+                                        <i class="bi bi-arrow-up"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ss-cli-ai-input-note">
+                                <span><i class="bi bi-shield-check"></i> Your workspace data stays within your
+                                    configured environment.</span>
+                                <span>Press Enter to send</span>
+                            </div>
+                        </div>
+                        <!--- AI Capabilities --->
+                        <aside class="ss-cli-ai-capabilities">
+                            <div class="ss-cli-ai-capabilities-head">
+                                <span>AI CAPABILITIES</span>
+                                <h3>What your AI can do</h3>
+                            </div>
+                            <div class="ss-cli-ai-capability-list">
+                                <div class="ss-cli-ai-capability">
+                                    <span><i class="bi bi-stars"></i></span>
+                                    <div><strong>Generate</strong><small>Create ideas, content & plans</small></div>
+                                </div>
+                                <div class="ss-cli-ai-capability">
+                                    <span><i class="bi bi-bar-chart-line"></i></span>
+                                    <div><strong>Analyze</strong><small>Understand data & patterns</small></div>
+                                </div>
+                                <div class="ss-cli-ai-capability">
+                                    <span><i class="bi bi-lightning-charge"></i></span>
+                                    <div><strong>Automate</strong><small>Design smarter workflows</small></div>
+                                </div>
+                                <div class="ss-cli-ai-capability">
+                                    <span><i class="bi bi-file-earmark-text"></i></span>
+                                    <div><strong>Summarize</strong><small>Turn complex information into clarity</small>
+                                    </div>
+                                </div>
+                                <div class="ss-cli-ai-capability">
+                                    <span><i class="bi bi-code-slash"></i></span>
+                                    <div><strong>Build</strong><small>Explore technical solutions</small></div>
+                                </div>
+                            </div>
+                            <div class="ss-cli-ai-capability-divider"></div>
+                            <div class="ss-cli-ai-model-info">
+                                <div class="ss-cli-ai-model-info-icon"><i class="bi bi-cpu"></i></div>
+                                <div>
+                                    <span>AI MODEL</span>
+                                    <strong>Intelligence Engine</strong>
+                                    <small>Context-aware workspace AI</small>
+                                </div>
+                            </div>
+                        </aside>
+                    </section>
+                    <!--- Quick Tools --->
+                    <section class="ss-cli-ai-tools">
+                        <div class="ss-cli-ai-tools-head">
+                            <div>
+                                <span>AI TOOLS</span>
+                                <h3>Start with a focused task</h3>
+                            </div>
+                        </div>
+                        <div class="ss-cli-ai-tool-grid">
+                            <button type="button" class="ss-cli-ai-tool"
+                                data-prompt="Create a business strategy based on my current projects.">
+                                <span><i class="bi bi-bullseye"></i></span>
+                                <div><strong>Strategy Builder</strong><small>Build a practical business strategy</small>
+                                </div>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                            <button type="button" class="ss-cli-ai-tool"
+                                data-prompt="Analyze my project workflow and identify possible bottlenecks.">
+                                <span><i class="bi bi-diagram-3"></i></span>
+                                <div><strong>Workflow Analyzer</strong><small>Find workflow improvements</small></div>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                            <button type="button" class="ss-cli-ai-tool"
+                                data-prompt="Create a concise report structure for my business analytics.">
+                                <span><i class="bi bi-file-earmark-bar-graph"></i></span>
+                                <div><strong>Report Builder</strong><small>Create structured reports</small></div>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                            <button type="button" class="ss-cli-ai-tool"
+                                data-prompt="Suggest useful automations for my current business processes.">
+                                <span><i class="bi bi-magic"></i></span>
+                                <div><strong>Automation Ideas</strong><small>Discover automation opportunities</small>
+                                </div>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--- JavaScript --->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-ai.js"></script>
+</body>
+
+</html>

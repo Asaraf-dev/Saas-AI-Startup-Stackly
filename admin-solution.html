@@ -1,0 +1,458 @@
+<!--- Admin Solution --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Solutions | SaaS & AI Startup">
+    <title>Admin Solutions | SaaS & AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <div class="ss-dash-page" id="ss-dash-page">
+        <div class="ss-dash-overlay" id="ss-dash-overlay"></div>
+        <!--- Sidebar --->
+        <aside class="ss-dash-sidebar" id="ss-dash-sidebar">
+            <div class="ss-dash-sidebar-top">
+                <a href="index.html" class="ss-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                </a>
+                <button type="button" class="ss-dash-sidebar-close" id="ss-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <!--- Mobile Account --->
+            <div class="ss-dash-mobile-account">
+                <div class="ss-dash-mobile-account-avatar">
+                    <img src="assets/images/profile-1.webp" alt="Profile">
+                </div>
+                <div class="ss-dash-mobile-account-info">
+                    <strong id="ss-dash-mobile-name">User</strong>
+                    <span id="ss-dash-mobile-email">user@example.com</span>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="ss-dash-nav">
+                <div class="ss-dash-nav-label">Workspace</div>
+                <a href="admin-dashboard.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-grid-1x2"></i></span>
+                    <span>Overview</span>
+                </a>
+                <a href="admin-analytics.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-bar-chart"></i></span>
+                    <span>Analytics</span>
+                </a>
+                <a href="admin-solution.html" class="ss-dash-nav-link ss-dash-nav-link-active">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-cpu"></i></span>
+                    <span>AI Solutions</span>
+                </a>
+                <a href="admin-profile.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-person-circle"></i></span>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="ss-dash-nav-link ss-dash-nav-logout" id="ss-dash-logout">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-box-arrow-right"></i></span>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <!--- Sidebar Bottom --->
+            <div class="ss-dash-sidebar-bottom">
+                <div class="ss-dash-sidebar-status">
+                    <span></span>
+                    System Online
+                </div>
+            </div>
+        </aside>
+        <!--- Main Area --->
+        <div class="ss-dash-main">
+            <!--- Topbar --->
+            <header class="ss-dash-topbar">
+                <div class="ss-dash-topbar-left">
+                    <button type="button" class="ss-dash-menu" id="ss-dash-menu" aria-label="Open dashboard menu">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                    <div class="ss-dash-title">
+                        <span>Workspace</span>
+                        <h1>AI Solutions</h1>
+                    </div>
+                </div>
+                <div class="ss-dash-topbar-right">
+                    <div class="ss-dash-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="ss-dash-email">user@example.com</span>
+                    </div>
+                    <button type="button" class="ss-dash-profile" id="ss-dash-profile" aria-label="Open profile">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                        <span class="ss-dash-profile-status"></span>
+                    </button>
+                </div>
+            </header>
+            <!--- Solution Content --->
+            <main class="ss-dash-content">
+                <div class="ss-dash-container">
+                    <!--- Solution Header --->
+                    <section class="ss-sol-admin-header">
+                        <div class="ss-sol-admin-header-content">
+                            <div class="ss-sol-admin-kicker"><span></span>INTELLIGENT PLATFORM</div>
+                            <h2>Build, manage & monitor your <span>AI solutions.</span></h2>
+                            <p>Manage intelligent systems, automation workflows, data services, and AI-powered products
+                                from one central workspace.</p>
+                        </div>
+                        <div class="ss-sol-admin-header-actions">
+                            <button type="button" class="ss-sol-admin-btn ss-sol-admin-btn-primary"
+                                id="ss-sol-admin-create">
+                                <i class="bi bi-plus-lg"></i>
+                                <span>New Solution</span>
+                            </button>
+                           
+                        </div>
+                    </section>
+                    <!--- Solution Metrics --->
+                    <section class="ss-sol-admin-metrics">
+                        <div class="ss-sol-admin-metric">
+                            <div class="ss-sol-admin-metric-top">
+                                <div class="ss-sol-admin-metric-icon ss-sol-admin-icon-purple"><i class="bi bi-cpu"></i>
+                                </div>
+                                <span class="ss-sol-admin-metric-status ss-sol-admin-status-active">Active</span>
+                            </div>
+                            <strong>18</strong>
+                            <span>AI Solutions</span>
+                            <div class="ss-sol-admin-metric-bottom"><i class="bi bi-arrow-up"></i> 4 added this month
+                            </div>
+                        </div>
+                        <div class="ss-sol-admin-metric">
+                            <div class="ss-sol-admin-metric-top">
+                                <div class="ss-sol-admin-metric-icon ss-sol-admin-icon-teal"><i
+                                        class="bi bi-lightning-charge"></i></div>
+                                <span class="ss-sol-admin-metric-status ss-sol-admin-status-active">Running</span>
+                            </div>
+                            <strong>42</strong>
+                            <span>Automations</span>
+                            <div class="ss-sol-admin-metric-bottom"><i class="bi bi-arrow-up"></i> 12.8% this month
+                            </div>
+                        </div>
+                        <div class="ss-sol-admin-metric">
+                            <div class="ss-sol-admin-metric-top">
+                                <div class="ss-sol-admin-metric-icon ss-sol-admin-icon-blue"><i
+                                        class="bi bi-database"></i></div>
+                                <span class="ss-sol-admin-metric-status ss-sol-admin-status-active">Connected</span>
+                            </div>
+                            <strong>24</strong>
+                            <span>Data Sources</span>
+                            <div class="ss-sol-admin-metric-bottom"><i class="bi bi-check2"></i> All systems synced
+                            </div>
+                        </div>
+                        <div class="ss-sol-admin-metric">
+                            <div class="ss-sol-admin-metric-top">
+                                <div class="ss-sol-admin-metric-icon ss-sol-admin-icon-orange"><i
+                                        class="bi bi-activity"></i></div>
+                                <span class="ss-sol-admin-metric-status ss-sol-admin-status-stable">Stable</span>
+                            </div>
+                            <strong>98.7%</strong>
+                            <span>Solution Health</span>
+                            <div class="ss-sol-admin-metric-bottom"><i class="bi bi-shield-check"></i> Systems operating
+                                normally</div>
+                        </div>
+                    </section>
+                    <!--- Active Solutions --->
+                    <section class="ss-sol-admin-section">
+                        <div class="ss-sol-admin-section-head">
+                            <div>
+                                <span class="ss-sol-admin-section-kicker">SOLUTION LIBRARY</span>
+                                <h3>Active AI solutions</h3>
+                            </div>
+                            <a href="#" class="ss-sol-admin-view-all">View all <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="ss-sol-admin-solution-grid">
+                            <article class="ss-sol-admin-solution-card ss-sol-admin-solution-featured">
+                                <div class="ss-sol-admin-solution-top">
+                                    <div class="ss-sol-admin-solution-icon"><i class="bi bi-stars"></i></div>
+                                    <span class="ss-sol-admin-live"><i></i>Live</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-number">01</div>
+                                <h4>AI & Machine Learning</h4>
+                                <p>Intelligent models for prediction, classification, recommendations, and automated
+                                    decision support.</p>
+                                <div class="ss-sol-admin-solution-tags">
+                                    <span>Predictive AI</span>
+                                    <span>ML</span>
+                                    <span>Generative AI</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-footer">
+                                    <div><strong>Active Models</strong><span>12</span></div>
+                                    <div><strong>Usage</strong><span>78%</span></div>
+                                    <button type="button" aria-label="Open AI and Machine Learning"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                            <article class="ss-sol-admin-solution-card">
+                                <div class="ss-sol-admin-solution-top">
+                                    <div class="ss-sol-admin-solution-icon"><i class="bi bi-lightning-charge"></i></div>
+                                    <span class="ss-sol-admin-live"><i></i>Live</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-number">02</div>
+                                <h4>Intelligent Automation</h4>
+                                <p>Connect triggers, AI processing, decisions, and actions into intelligent workflows.
+                                </p>
+                                <div class="ss-sol-admin-solution-tags">
+                                    <span>Workflows</span>
+                                    <span>AI Agents</span>
+                                    <span>Processes</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-footer">
+                                    <div><strong>Workflows</strong><span>42</span></div>
+                                    <div><strong>Usage</strong><span>64%</span></div>
+                                    <button type="button" aria-label="Open Intelligent Automation"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                            <article class="ss-sol-admin-solution-card">
+                                <div class="ss-sol-admin-solution-top">
+                                    <div class="ss-sol-admin-solution-icon"><i class="bi bi-bar-chart-line"></i></div>
+                                    <span class="ss-sol-admin-live"><i></i>Live</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-number">03</div>
+                                <h4>Data Intelligence</h4>
+                                <p>Transform connected business data into insights, patterns, forecasts, and decisions.
+                                </p>
+                                <div class="ss-sol-admin-solution-tags">
+                                    <span>Analytics</span>
+                                    <span>Forecasting</span>
+                                    <span>Insights</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-footer">
+                                    <div><strong>Sources</strong><span>24</span></div>
+                                    <div><strong>Usage</strong><span>52%</span></div>
+                                    <button type="button" aria-label="Open Data Intelligence"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                            <article class="ss-sol-admin-solution-card">
+                                <div class="ss-sol-admin-solution-top">
+                                    <div class="ss-sol-admin-solution-icon"><i class="bi bi-cloud"></i></div>
+                                    <span class="ss-sol-admin-live"><i></i>Live</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-number">04</div>
+                                <h4>AI Cloud Platforms</h4>
+                                <p>Secure cloud infrastructure for applications, AI services, APIs, data, and
+                                    deployment.</p>
+                                <div class="ss-sol-admin-solution-tags">
+                                    <span>Cloud</span>
+                                    <span>APIs</span>
+                                    <span>Infrastructure</span>
+                                </div>
+                                <div class="ss-sol-admin-solution-footer">
+                                    <div><strong>Services</strong><span>16</span></div>
+                                    <div><strong>Usage</strong><span>43%</span></div>
+                                    <button type="button" aria-label="Open AI Cloud Platforms"><i
+                                            class="bi bi-arrow-up-right"></i></button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!--- Solution Performance --->
+                    <section class="ss-sol-admin-performance">
+                        <div class="ss-sol-admin-panel ss-sol-admin-performance-chart">
+                            <div class="ss-sol-admin-panel-head">
+                                <div>
+                                    <span class="ss-sol-admin-section-kicker">SYSTEM PERFORMANCE</span>
+                                    <h3>Solution activity</h3>
+                                </div>
+                                <div class="ss-sol-admin-chart-legend">
+                                    <span><i></i>AI Requests</span>
+                                    <span><i></i>Automation</span>
+                                </div>
+                            </div>
+                            <div class="ss-sol-admin-chart">
+                                <div class="ss-sol-admin-chart-y">
+                                    <span>100%</span>
+                                    <span>75%</span>
+                                    <span>50%</span>
+                                    <span>25%</span>
+                                    <span>0%</span>
+                                </div>
+                                <div class="ss-sol-admin-chart-area">
+                                    <div class="ss-sol-admin-chart-grid"></div>
+                                    <svg viewBox="0 0 700 260" preserveAspectRatio="none"
+                                        aria-label="Solution activity chart">
+                                        <defs>
+                                            <linearGradient id="ssSolAreaOne" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#6C5CE7" stop-opacity=".22" />
+                                                <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path class="ss-sol-admin-chart-fill"
+                                            d="M0,210 C60,185 80,190 125,160 S200,120 250,145 S320,175 365,115 S440,90 485,110 S550,75 590,95 S650,55 700,70 L700,260 L0,260 Z"
+                                            fill="url(#ssSolAreaOne)"></path>
+                                        <path class="ss-sol-admin-chart-line ss-sol-admin-chart-line-one"
+                                            d="M0,210 C60,185 80,190 125,160 S200,120 250,145 S320,175 365,115 S440,90 485,110 S550,75 590,95 S650,55 700,70">
+                                        </path>
+                                        <path class="ss-sol-admin-chart-line ss-sol-admin-chart-line-two"
+                                            d="M0,225 C70,215 95,205 135,195 S210,175 255,185 S325,150 370,165 S445,130 490,145 S550,125 595,135 S650,105 700,120">
+                                        </path>
+                                    </svg>
+                                    <div class="ss-sol-admin-chart-x">
+                                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ss-sol-admin-panel ss-sol-admin-health">
+                            <div class="ss-sol-admin-panel-head">
+                                <div>
+                                    <span class="ss-sol-admin-section-kicker">SOLUTION HEALTH</span>
+                                    <h3>Platform status</h3>
+                                </div>
+                                <span class="ss-sol-admin-health-icon"><i class="bi bi-shield-check"></i></span>
+                            </div>
+                            <div class="ss-sol-admin-health-score">
+                                <div class="ss-sol-admin-health-ring"><strong>98.7%</strong><span>Healthy</span></div>
+                                <div class="ss-sol-admin-health-copy">
+                                    <strong>All systems operational</strong>
+                                    <p>Your active solutions are running within normal operating conditions.</p>
+                                </div>
+                            </div>
+                            <div class="ss-sol-admin-health-list">
+                                <div><span><i class="bi bi-cpu"></i> AI Engine</span><strong>Operational</strong></div>
+                                <div><span><i class="bi bi-lightning"></i> Automation</span><strong>Operational</strong>
+                                </div>
+                                <div><span><i class="bi bi-database"></i> Data
+                                        Services</span><strong>Operational</strong></div>
+                                <div><span><i class="bi bi-cloud"></i> Cloud Services</span><strong>Operational</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Solution Usage --->
+                    <section class="ss-sol-admin-usage">
+                        <div class="ss-sol-admin-panel">
+                            <div class="ss-sol-admin-panel-head">
+                                <div>
+                                    <span class="ss-sol-admin-section-kicker">USAGE DISTRIBUTION</span>
+                                    <h3>Solution adoption</h3>
+                                </div>
+                                <span class="ss-sol-admin-panel-note">Current usage</span>
+                            </div>
+                            <div class="ss-sol-admin-usage-list">
+                                <div class="ss-sol-admin-usage-item">
+                                    <div class="ss-sol-admin-usage-info"><span><i class="bi bi-stars"></i> AI & Machine
+                                            Learning</span><strong>78%</strong></div>
+                                    <div class="ss-sol-admin-progress"><span style="width:78%"></span></div>
+                                </div>
+                                <div class="ss-sol-admin-usage-item">
+                                    <div class="ss-sol-admin-usage-info"><span><i class="bi bi-lightning-charge"></i>
+                                            Intelligent Automation</span><strong>64%</strong></div>
+                                    <div class="ss-sol-admin-progress"><span style="width:64%"></span></div>
+                                </div>
+                                <div class="ss-sol-admin-usage-item">
+                                    <div class="ss-sol-admin-usage-info"><span><i class="bi bi-bar-chart"></i> Data
+                                            Intelligence</span><strong>52%</strong></div>
+                                    <div class="ss-sol-admin-progress"><span style="width:52%"></span></div>
+                                </div>
+                                <div class="ss-sol-admin-usage-item">
+                                    <div class="ss-sol-admin-usage-info"><span><i class="bi bi-cloud"></i> AI Cloud
+                                            Platforms</span><strong>43%</strong></div>
+                                    <div class="ss-sol-admin-progress"><span style="width:43%"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ss-sol-admin-panel ss-sol-admin-actions-panel">
+                            <div class="ss-sol-admin-panel-head">
+                                <div>
+                                    <span class="ss-sol-admin-section-kicker">QUICK ACTIONS</span>
+                                    <h3>Manage solutions</h3>
+                                </div>
+                            </div>
+                            <div class="ss-sol-admin-actions-grid">
+                                <button type="button" class="ss-sol-admin-action" data-action="create">
+                                    <span><i class="bi bi-plus-circle"></i></span>
+                                    <strong>New Solution</strong>
+                                    <small>Create an AI solution</small>
+                                </button>
+                                <button type="button" class="ss-sol-admin-action" data-action="automation">
+                                    <span><i class="bi bi-lightning-charge"></i></span>
+                                    <strong>Automation</strong>
+                                    <small>Manage workflows</small>
+                                </button>
+                                <button type="button" class="ss-sol-admin-action" data-action="data">
+                                    <span><i class="bi bi-database-add"></i></span>
+                                    <strong>Connect Data</strong>
+                                    <small>Add a data source</small>
+                                </button>
+                                <button type="button" class="ss-sol-admin-action" data-action="report">
+                                    <span><i class="bi bi-file-earmark-bar-graph"></i></span>
+                                    <strong>Generate Report</strong>
+                                    <small>Export solution data</small>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Recent Solution Activity --->
+                    <section class="ss-sol-admin-activity">
+                        <div class="ss-sol-admin-panel">
+                            <div class="ss-sol-admin-panel-head">
+                                <div>
+                                    <span class="ss-sol-admin-section-kicker">RECENT ACTIVITY</span>
+                                    <h3>Solution activity</h3>
+                                </div>
+                                <a href="#" class="ss-sol-admin-view-all">View activity <i
+                                        class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="ss-sol-admin-activity-list">
+                                <div class="ss-sol-admin-activity-item">
+                                    <div class="ss-sol-admin-activity-icon"><i class="bi bi-cpu"></i></div>
+                                    <div class="ss-sol-admin-activity-content">
+                                        <strong>AI model updated</strong>
+                                        <span>Predictive Intelligence model was updated successfully.</span>
+                                    </div>
+                                    <time>12 min ago</time>
+                                </div>
+                                <div class="ss-sol-admin-activity-item">
+                                    <div class="ss-sol-admin-activity-icon"><i class="bi bi-lightning-charge"></i></div>
+                                    <div class="ss-sol-admin-activity-content">
+                                        <strong>Automation activated</strong>
+                                        <span>Lead Management workflow is now running.</span>
+                                    </div>
+                                    <time>38 min ago</time>
+                                </div>
+                                <div class="ss-sol-admin-activity-item">
+                                    <div class="ss-sol-admin-activity-icon"><i class="bi bi-database"></i></div>
+                                    <div class="ss-sol-admin-activity-content">
+                                        <strong>Data source connected</strong>
+                                        <span>New business data source was connected successfully.</span>
+                                    </div>
+                                    <time>1 hr ago</time>
+                                </div>
+                                <div class="ss-sol-admin-activity-item">
+                                    <div class="ss-sol-admin-activity-icon"><i class="bi bi-cloud-check"></i></div>
+                                    <div class="ss-sol-admin-activity-content">
+                                        <strong>Cloud service synchronized</strong>
+                                        <span>AI Cloud Platform services completed synchronization.</span>
+                                    </div>
+                                    <time>2 hrs ago</time>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--- JavaScript --->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-solution.js"></script>
+</body>
+
+</html>

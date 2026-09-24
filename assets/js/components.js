@@ -1,0 +1,5 @@
+/*--- Components ---*/
+const ssComponentLoad=async(selector,path)=>{const ssComponent=document.querySelector(selector);if(!ssComponent)return false;try{const ssResponse=await fetch(path);if(!ssResponse.ok)throw new Error(`Unable to load component: ${ssResponse.status}`);ssComponent.innerHTML=await ssResponse.text();return true;}catch(ssError){console.error(`SaaS & AI Component Error: ${path}`,ssError);ssComponent.innerHTML="";return false;}};
+/*--- Component Initialization ---*/
+const ssInitializeComponents=async()=>{const [ssNavbarLoaded,ssFooterLoaded]=await Promise.all([ssComponentLoad("#ss-navbar-component","assets/components/navbar.html"),ssComponentLoad("#ss-footer-component","assets/components/footer.html")]);document.dispatchEvent(new CustomEvent("ssComponentsLoaded",{detail:{navbar:ssNavbarLoaded,footer:ssFooterLoaded}}));};
+ssInitializeComponents();

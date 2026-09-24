@@ -1,0 +1,575 @@
+<!--- Admin Analytics --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Analytics | SaaS & AI Startup">
+    <title>Admin Analytics | SaaS & AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <div class="ss-dash-page" id="ss-dash-page">
+        <!--- Sidebar Overlay --->
+        <div class="ss-dash-overlay" id="ss-dash-overlay"></div>
+        <!--- Sidebar --->
+        <aside class="ss-dash-sidebar" id="ss-dash-sidebar">
+            <div class="ss-dash-sidebar-top">
+                <a href="index.html" class="ss-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="SaaS & AI Startup">
+                </a>
+                <button type="button" class="ss-dash-sidebar-close" id="ss-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <!--- Mobile Account --->
+            <div class="ss-dash-mobile-account">
+                <div class="ss-dash-mobile-account-avatar">
+                    <img src="assets/images/profile-1.webp" alt="Profile">
+                </div>
+                <div class="ss-dash-mobile-account-info">
+                    <strong id="ss-dash-mobile-name">User</strong>
+                    <span id="ss-dash-mobile-email">user@example.com</span>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="ss-dash-nav">
+                <div class="ss-dash-nav-label">Workspace</div>
+                <a href="admin-dashboard.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-grid-1x2"></i></span>
+                    <span>Overview</span>
+                </a>
+                <a href="admin-analytics.html" class="ss-dash-nav-link ss-dash-nav-link-active">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-bar-chart"></i></span>
+                    <span>Analytics</span>
+                </a>
+                <a href="admin-solution.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-cpu"></i></span>
+                    <span>AI Solutions</span>
+                </a>
+                <a href="admin-profile.html" class="ss-dash-nav-link">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-person-circle"></i></span>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="ss-dash-nav-link ss-dash-nav-logout" id="ss-dash-logout">
+                    <span class="ss-dash-nav-icon"><i class="bi bi-box-arrow-right"></i></span>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <!--- Sidebar Bottom --->
+            <div class="ss-dash-sidebar-bottom">
+                <div class="ss-dash-sidebar-status">
+                    <span></span>
+                    System Online
+                </div>
+            </div>
+        </aside>
+        <!--- Main Area --->
+        <div class="ss-dash-main">
+            <!--- Topbar --->
+            <header class="ss-dash-topbar">
+                <div class="ss-dash-topbar-left">
+                    <button type="button" class="ss-dash-menu" id="ss-dash-menu" aria-label="Open dashboard menu">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                    <div class="ss-dash-title">
+                        <span>Workspace</span>
+                        <h1>Admin Analytics</h1>
+                    </div>
+                </div>
+                <div class="ss-dash-topbar-right">
+                    <div class="ss-dash-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="ss-dash-email">user@example.com</span>
+                    </div>
+                    <button type="button" class="ss-dash-profile" id="ss-dash-profile" aria-label="Open profile">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                        <span class="ss-dash-profile-status"></span>
+                    </button>
+                </div>
+            </header>
+            <!--- Analytics Content --->
+            <main class="ss-dash-content">
+                <div class="ss-dash-container">
+                    <!--- Analytics Heading --->
+                    <section class="ss-anl-heading">
+                        <div>
+                            <div class="ss-anl-kicker">
+                                <span></span>
+                                DATA INTELLIGENCE
+                            </div>
+                            <h2>Understand what's happening <span>across your platform.</span></h2>
+                            <p>Track users, AI activity, automation performance, solutions, and system usage from one
+                                intelligent analytics workspace.</p>
+                        </div>
+                        <div class="ss-anl-controls">
+                            <button type="button" class="ss-anl-filter ss-anl-filter-active">
+                                <i class="bi bi-calendar3"></i>
+                                <span>Last 30 Days</span>
+                            </button>
+                            <a href="404.html" class="ss-anl-export">
+                                <i class="bi bi-download"></i>
+                                <span>Export Report</span>
+                            </a>
+                        </div>
+                    </section>
+                    <!--- Analytics Metrics --->
+                    <section class="ss-anl-metrics">
+                        <div class="ss-anl-metric">
+                            <div class="ss-anl-metric-icon"><i class="bi bi-people"></i></div>
+                            <div class="ss-anl-metric-info">
+                                <span>Total Users</span>
+                                <strong>1,284</strong>
+                                <div><i class="bi bi-arrow-up"></i> 8.4% <small>vs last period</small></div>
+                            </div>
+                        </div>
+                        <div class="ss-anl-metric">
+                            <div class="ss-anl-metric-icon"><i class="bi bi-cpu"></i></div>
+                            <div class="ss-anl-metric-info">
+                                <span>AI Requests</span>
+                                <strong>18.6K</strong>
+                                <div><i class="bi bi-arrow-up"></i> 12.6% <small>vs last period</small></div>
+                            </div>
+                        </div>
+                        <div class="ss-anl-metric">
+                            <div class="ss-anl-metric-icon"><i class="bi bi-lightning-charge"></i></div>
+                            <div class="ss-anl-metric-info">
+                                <span>Automations</span>
+                                <strong>842</strong>
+                                <div><i class="bi bi-arrow-up"></i> 18.2% <small>completed</small></div>
+                            </div>
+                        </div>
+                        <div class="ss-anl-metric">
+                            <div class="ss-anl-metric-icon"><i class="bi bi-activity"></i></div>
+                            <div class="ss-anl-metric-info">
+                                <span>System Health</span>
+                                <strong>98.7%</strong>
+                                <div class="ss-anl-metric-positive"><i class="bi bi-check-circle"></i> Stable
+                                    <small>platform</small></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Main Analytics --->
+                    <section class="ss-anl-main-grid">
+                        <!--- Platform Activity --->
+                        <div class="ss-dash-panel ss-anl-activity">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>Platform Performance</span>
+                                    <h3>Activity Overview</h3>
+                                </div>
+                                <div class="ss-anl-chart-legend">
+                                    <span><i></i>Activity</span>
+                                    <span><i></i>Requests</span>
+                                </div>
+                            </div>
+                            <div class="ss-anl-large-chart">
+                                <div class="ss-anl-y-axis">
+                                    <span>20K</span>
+                                    <span>15K</span>
+                                    <span>10K</span>
+                                    <span>5K</span>
+                                    <span>0</span>
+                                </div>
+                                <div class="ss-anl-chart-area">
+                                    <div class="ss-anl-chart-lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <svg viewBox="0 0 900 300" preserveAspectRatio="none">
+                                        <defs>
+                                            <linearGradient id="ssAnlActivityFill" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#6C5CE7" stop-opacity=".2" />
+                                                <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            d="M0 235 C70 220 85 190 145 202 S220 230 285 165 S360 125 425 155 S500 190 555 120 S640 95 700 120 S790 65 900 40 L900 300 L0 300 Z"
+                                            fill="url(#ssAnlActivityFill)" />
+                                        <path
+                                            d="M0 235 C70 220 85 190 145 202 S220 230 285 165 S360 125 425 155 S500 190 555 120 S640 95 700 120 S790 65 900 40"
+                                            fill="none" stroke="#6C5CE7" stroke-width="4" />
+                                        <path
+                                            d="M0 255 C80 240 110 220 170 228 S250 245 315 205 S390 180 450 195 S525 215 590 170 S675 145 735 170 S820 115 900 100"
+                                            fill="none" stroke="#00C2A8" stroke-width="3" stroke-dasharray="8 7" />
+                                    </svg>
+                                    <div class="ss-anl-x-axis">
+                                        <span>01</span>
+                                        <span>05</span>
+                                        <span>10</span>
+                                        <span>15</span>
+                                        <span>20</span>
+                                        <span>25</span>
+                                        <span>30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Performance Summary --->
+                        <div class="ss-dash-panel ss-anl-performance">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>Performance</span>
+                                    <h3>Platform Score</h3>
+                                </div>
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+                            <div class="ss-anl-score">
+                                <div class="ss-anl-score-circle">
+                                    <div>
+                                        <strong>94</strong>
+                                        <span>/100</span>
+                                    </div>
+                                </div>
+                                <div class="ss-anl-score-status">
+                                    <strong>Excellent</strong>
+                                    <span>Platform performance</span>
+                                </div>
+                            </div>
+                            <div class="ss-anl-score-list">
+                                <div>
+                                    <span>Response Time</span>
+                                    <strong>124ms</strong>
+                                </div>
+                                <div>
+                                    <span>AI Processing</span>
+                                    <strong>96%</strong>
+                                </div>
+                                <div>
+                                    <span>API Reliability</span>
+                                    <strong>99.4%</strong>
+                                </div>
+                                <div>
+                                    <span>Data Sync</span>
+                                    <strong>98.8%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- User Analytics --->
+                    <section class="ss-anl-secondary-grid">
+                        <!--- User Growth --->
+                        <div class="ss-dash-panel ss-anl-user-growth">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>User Analytics</span>
+                                    <h3>User Growth</h3>
+                                </div>
+                                <a href="404.html">Details <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="ss-anl-growth-summary">
+                                <div>
+                                    <strong>1,284</strong>
+                                    <span>Total Users</span>
+                                </div>
+                                <div>
+                                    <strong>+8.4%</strong>
+                                    <span>Growth Rate</span>
+                                </div>
+                                <div>
+                                    <strong>186</strong>
+                                    <span>New Users</span>
+                                </div>
+                            </div>
+                            <div class="ss-anl-growth-chart">
+                                <div class="ss-anl-growth-bars">
+                                    <span style="height:35%"></span>
+                                    <span style="height:45%"></span>
+                                    <span style="height:40%"></span>
+                                    <span style="height:58%"></span>
+                                    <span style="height:52%"></span>
+                                    <span style="height:70%"></span>
+                                    <span style="height:63%"></span>
+                                    <span style="height:82%"></span>
+                                    <span style="height:75%"></span>
+                                    <span style="height:91%"></span>
+                                    <span style="height:84%"></span>
+                                    <span style="height:100%"></span>
+                                </div>
+                            </div>
+                            <div class="ss-anl-growth-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                                <span>Sep</span>
+                                <span>Oct</span>
+                                <span>Nov</span>
+                                <span>Dec</span>
+                            </div>
+                        </div>
+                        <!--- User Distribution --->
+                        <div class="ss-dash-panel ss-anl-distribution">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>Account Distribution</span>
+                                    <h3>Users by Type</h3>
+                                </div>
+                                <i class="bi bi-pie-chart"></i>
+                            </div>
+                            <div class="ss-anl-distribution-body">
+                                <div class="ss-anl-donut">
+                                    <div>
+                                        <strong>1,284</strong>
+                                        <span>Users</span>
+                                    </div>
+                                </div>
+                                <div class="ss-anl-distribution-list">
+                                    <div>
+                                        <span><i></i>Clients</span>
+                                        <strong>1,142</strong>
+                                    </div>
+                                    <div>
+                                        <span><i></i>Admins</span>
+                                        <strong>86</strong>
+                                    </div>
+                                    <div>
+                                        <span><i></i>Managers</span>
+                                        <strong>56</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- AI Analytics --->
+                    <section class="ss-anl-ai-grid">
+                        <!--- AI Usage --->
+                        <div class="ss-dash-panel ss-anl-ai-requests">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>Artificial Intelligence</span>
+                                    <h3>AI Request Analytics</h3>
+                                </div>
+                                <a href="404.html">View Details <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="ss-anl-ai-summary">
+                                <div class="ss-anl-ai-total">
+                                    <strong>18.6K</strong>
+                                    <span>Total AI requests</span>
+                                </div>
+                                <div class="ss-anl-ai-change">
+                                    <i class="bi bi-arrow-up"></i>
+                                    <strong>12.6%</strong>
+                                    <span>Compared to previous period</span>
+                                </div>
+                            </div>
+                            <div class="ss-anl-ai-bars">
+                                <div>
+                                    <span>Generative AI</span>
+                                    <div><i style="width:86%"></i></div>
+                                    <strong>8.2K</strong>
+                                </div>
+                                <div>
+                                    <span>AI Assistants</span>
+                                    <div><i style="width:67%"></i></div>
+                                    <strong>4.8K</strong>
+                                </div>
+                                <div>
+                                    <span>Predictive AI</span>
+                                    <div><i style="width:52%"></i></div>
+                                    <strong>3.1K</strong>
+                                </div>
+                                <div>
+                                    <span>Machine Learning</span>
+                                    <div><i style="width:34%"></i></div>
+                                    <strong>2.5K</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- AI Efficiency --->
+                        <div class="ss-dash-panel ss-anl-ai-efficiency">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>AI Performance</span>
+                                    <h3>Model Efficiency</h3>
+                                </div>
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <div class="ss-anl-efficiency-main">
+                                <div class="ss-anl-efficiency-circle">
+                                    <div>
+                                        <strong>96%</strong>
+                                        <span>Efficiency</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-anl-efficiency-list">
+                                <div>
+                                    <span>Avg. Response</span>
+                                    <strong>1.8s</strong>
+                                </div>
+                                <div>
+                                    <span>Successful Requests</span>
+                                    <strong>99.2%</strong>
+                                </div>
+                                <div>
+                                    <span>Failed Requests</span>
+                                    <strong>0.8%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Solutions Usage --->
+                    <section class="ss-dash-panel ss-anl-solutions">
+                        <div class="ss-dash-panel-header">
+                            <div>
+                                <span>Solution Intelligence</span>
+                                <h3>Solution Usage</h3>
+                            </div>
+                            <a href="admin-solution.html">Manage Solutions <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="ss-anl-solution-grid">
+                            <div class="ss-anl-solution-item">
+                                <div class="ss-anl-solution-icon"><i class="bi bi-cpu"></i></div>
+                                <div>
+                                    <strong>AI & Machine Learning</strong>
+                                    <span>38% platform usage</span>
+                                </div>
+                                <div class="ss-anl-solution-value">
+                                    <div><i style="width:78%"></i></div>
+                                    <strong>78%</strong>
+                                </div>
+                            </div>
+                            <div class="ss-anl-solution-item">
+                                <div class="ss-anl-solution-icon"><i class="bi bi-lightning-charge"></i></div>
+                                <div>
+                                    <strong>Intelligent Automation</strong>
+                                    <span>26% platform usage</span>
+                                </div>
+                                <div class="ss-anl-solution-value">
+                                    <div><i style="width:64%"></i></div>
+                                    <strong>64%</strong>
+                                </div>
+                            </div>
+                            <div class="ss-anl-solution-item">
+                                <div class="ss-anl-solution-icon"><i class="bi bi-bar-chart-line"></i></div>
+                                <div>
+                                    <strong>Data Intelligence</strong>
+                                    <span>19% platform usage</span>
+                                </div>
+                                <div class="ss-anl-solution-value">
+                                    <div><i style="width:52%"></i></div>
+                                    <strong>52%</strong>
+                                </div>
+                            </div>
+                            <div class="ss-anl-solution-item">
+                                <div class="ss-anl-solution-icon"><i class="bi bi-cloud"></i></div>
+                                <div>
+                                    <strong>AI Cloud Platforms</strong>
+                                    <span>17% platform usage</span>
+                                </div>
+                                <div class="ss-anl-solution-value">
+                                    <div><i style="width:43%"></i></div>
+                                    <strong>43%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Analytics Insights --->
+                    <section class="ss-anl-insights-grid">
+                        <div class="ss-dash-panel ss-anl-insights">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>Intelligence Layer</span>
+                                    <h3>Analytics Insights</h3>
+                                </div>
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <div class="ss-anl-insight-list">
+                                <div class="ss-anl-insight">
+                                    <div class="ss-anl-insight-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                                    <div>
+                                        <strong>User activity increased</strong>
+                                        <span>Platform engagement increased during the current period.</span>
+                                    </div>
+                                </div>
+                                <div class="ss-anl-insight">
+                                    <div class="ss-anl-insight-icon"><i class="bi bi-lightning-charge"></i></div>
+                                    <div>
+                                        <strong>Automation usage is growing</strong>
+                                        <span>Workflow execution has increased across active projects.</span>
+                                    </div>
+                                </div>
+                                <div class="ss-anl-insight">
+                                    <div class="ss-anl-insight-icon"><i class="bi bi-cpu"></i></div>
+                                    <div>
+                                        <strong>AI demand remains strong</strong>
+                                        <span>Generative AI currently represents the largest request volume.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Top Activity --->
+                        <div class="ss-dash-panel ss-anl-top-activity">
+                            <div class="ss-dash-panel-header">
+                                <div>
+                                    <span>Activity</span>
+                                    <h3>Top Activity Sources</h3>
+                                </div>
+                                <i class="bi bi-bar-chart-steps"></i>
+                            </div>
+                            <div class="ss-anl-source-list">
+                                <div>
+                                    <div class="ss-anl-source-number">01</div>
+                                    <div class="ss-anl-source-info">
+                                        <strong>AI Platform</strong>
+                                        <span>42% activity</span>
+                                    </div>
+                                    <strong>42%</strong>
+                                </div>
+                                <div>
+                                    <div class="ss-anl-source-number">02</div>
+                                    <div class="ss-anl-source-info">
+                                        <strong>Automation</strong>
+                                        <span>28% activity</span>
+                                    </div>
+                                    <strong>28%</strong>
+                                </div>
+                                <div>
+                                    <div class="ss-anl-source-number">03</div>
+                                    <div class="ss-anl-source-info">
+                                        <strong>Analytics</strong>
+                                        <span>18% activity</span>
+                                    </div>
+                                    <strong>18%</strong>
+                                </div>
+                                <div>
+                                    <div class="ss-anl-source-number">04</div>
+                                    <div class="ss-anl-source-info">
+                                        <strong>Cloud</strong>
+                                        <span>12% activity</span>
+                                    </div>
+                                    <strong>12%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--- JavaScript --->
+    <script src="assets/js/dashboard.js"></script>
+       <script src="assets/js/admin-analytics.js"></script>
+</body>
+
+</html>
